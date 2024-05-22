@@ -3,12 +3,8 @@ import Image from "next/image";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useMediaQuery } from "usehooks-ts";
 import { Menu } from "lucide-react";
 import CliComp from "./CliComp";
 import { useState } from "react";
@@ -22,7 +18,6 @@ const NavBar = () => {
     { name: "FAQ", id: "faq" },
   ];
 
-  const isBigScreen = useMediaQuery("(min-width: 768px)");
   return (
     <div
       className=" backdrop-blur-md  rounded-xl left-1/2 -translate-x-1/2

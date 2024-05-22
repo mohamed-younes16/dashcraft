@@ -15,7 +15,7 @@ const GlassMove = () => {
   useEffect(() => setIsReady(true), []);
   return isReady ? (
     <div className="absolute flexcenter  lg:z-[1] w-full max-lg:h-[50dvh] h-full">
-      {true && (
+      {matches && (
         <>
           <Suspense
             fallback={

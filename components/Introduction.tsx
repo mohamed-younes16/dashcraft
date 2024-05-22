@@ -137,7 +137,7 @@ const Introduction = () => {
           </div>
           <div className="lg:flex-1 w-fit  max-w-lg ">
             <Image
-              src={"/assets/results.png"}
+              src={"/assets/results.webp"}
               className=" h- w-full "
               alt="illustration"
               height={50}

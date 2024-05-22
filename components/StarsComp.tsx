@@ -10,6 +10,7 @@ function StarsComp() {
         <motion.div
           initial={{ scale: 0, rotate: 180, x: -20 }}
           whileInView={{ rotate: 0, scale: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{
             type: "spring",
             stiffness: 260,
