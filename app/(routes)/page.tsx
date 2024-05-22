@@ -7,7 +7,7 @@ import Pricing from "@/components/Pricing";
 export default async function Home() {
   return (
     <div className="">
-      <div className="px-8 overflow-x-visible  max-md:px-0  max-w-7xl mx-auto">
+      <div className="px-8   max-md:px-0  max-w-7xl mx-auto">
         <Landing />
       </div>
       <Introduction />

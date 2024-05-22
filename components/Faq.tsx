@@ -178,12 +178,12 @@ back in case you were curious."
         className="mt-16 relative flex flex-wrap justify-between 
       px-5 py-6 max-w-7xl mx-auto items-center"
       >
-        <p className="flexcenter text-center flex-wrap max-md:gap-2 gap-6">
+        <p className="flexcenter text-center max-lg:w-full flex-wrap max-md:gap-2 gap-6">
           Copyright © 2024 DASHCRAFT. All rights reserved
           <span className="text-zinc-200/80">Privacy Policy </span>
           <span className="text-zinc-200/80">Terms of Use</span>
         </p>
-        <div className=" flexcenter max-sm:w-full   gap-4 py-4">
+        <div className=" flexcenter max-lg:w-full   gap-4 py-4">
           {socialLinks.map((e, i) => (
             <Link
               aria-label="social link"

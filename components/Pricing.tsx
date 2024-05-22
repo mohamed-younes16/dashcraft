@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "./Heading";
-import { CheckCircleIcon, DollarSign } from "lucide-react";
+import { CheckCircleIcon, Crown, DollarSign } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Pricing = () => {
@@ -42,7 +42,7 @@ const Pricing = () => {
       ],
     },
   ];
-  
+
   return (
     <div id="pricing">
       <div className="flexcenter flex-col mt-14 gap-8">
@@ -70,7 +70,9 @@ No money surprises here!"
             <div className="text-3xl gap-3 flex items-center mb-4">
               {e.tier}
               {i === 1 && (
-                <p className="bg-blue-600 p-1 rounded-lg text-lg">Popular</p>
+                <div className=" bg-yellow-400 flexcenter px-3 py-1 rounded-xl">
+                  <Crown className="text-black h-8 w-10" />
+                </div>
               )}{" "}
             </div>
             <p className="text-neutral-100/80 max-h border-b-[1px] pb-6 border-b-zinc-400/50 max-w-sm">
@@ -92,11 +94,13 @@ No money surprises here!"
                 </div>
               ))}
             </div>
-            <Button className="rounded-full hover:shadow-lg
+            <Button
+              className="rounded-full hover:shadow-lg
              active:shadow-transparent hover:scale-105 active:scale-95
               hover:shadow-main/50 transition-all 
               text-neutral-100
-               bg-[linear-gradient(138deg,#000000_43%,#2d4d56_48%,black_55%)] ">
+               bg-[linear-gradient(138deg,#000000_43%,#2d4d56_48%,black_55%)] "
+            >
               Get Started
             </Button>
           </div>

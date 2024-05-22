@@ -5,6 +5,7 @@ import { Loader2 } from "lucide-react";
 import { Suspense } from "react";
 import { lazy } from "react";
 import { useStore } from "@/lib/store";
+import Image from "next/image";
 
 const GlassMove = () => {
   const { isReady, setIsReady } = useStore();
@@ -14,8 +15,8 @@ const GlassMove = () => {
 
   useEffect(() => setIsReady(true), []);
   return isReady ? (
-    <div className="absolute flexcenter  lg:z-[1] w-full max-lg:h-[50dvh] h-full">
-      {matches && (
+    <div className="absolute backdrop-blur-3x flexcenter -z-10  lg:z-[1] w-full max-lg:h-[50dvh] h-full">
+      {matches ? (
         <>
           <Suspense
             fallback={
@@ -32,7 +33,10 @@ const GlassMove = () => {
             />
           </Suspense>
         </>
-      )}
+      ):
+
+      <Image src={"/assets/landing.webp"} 
+      className=" object-contain opacity-60" fill alt="landing page image"/>}
     </div>
   ) : null;
 };

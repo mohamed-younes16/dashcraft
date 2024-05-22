@@ -1,5 +1,6 @@
 import Image from "next/image";
 import GlassMove from "./GlassMove";
+import { Button } from "./ui/button";
 
 const Landing = () => {
   const features = [
@@ -9,13 +10,13 @@ const Landing = () => {
   ];
 
   return (
-    <div className=" gap-6  max-lg:flex items-center  ">
-      <div className="flex max-lg:px-6 relative max-lg:min-h-[50vh] flex-wrap w-full">
-        <div className="max-lg:w-full flex  flex-col justify-center ">
+    <div className=" gap-6max-lg:flex mb-10 items-center  ">
+      <div className="flex max-lg:px-6 relative z-40  max-lg:min-h-[50vh] flex-wrap w-full">
+        <div className="max-lg:w-full flex     flex-col justify-center ">
           {features.map((e, i) => (
             <>
               <div className=" lg:max-w-[450px] max-lg:flex max-lg:items-center mb-16 max-lg:w-full  relative">
-                <p className=" max-lg:text-lg max-md:text-base text-3xl font-semibold">
+                <p className=" max-lg:text-xl  text-3xl font-semibold">
                   {e}
                   {i == 0 && <span className="text-main"> DashCraft? </span>}
                 </p>
@@ -25,6 +26,11 @@ const Landing = () => {
               </div>
             </>
           ))}
+          <Button className=" bg-main  
+          active:shadow-transparent hover:scale-105 
+          active:scale-95
+              hover:shadow-main/50 transition-all
+                 text-2xl font-semibold hover shadow-main shadow-lg">Sign-up</Button>
         </div>
         <div
           className="lg:flex-1  max-lg:-z-10 max-lg:absolute 
@@ -40,11 +46,10 @@ const Landing = () => {
               className="h-[50px] w-[120px]  "
               src={"/assets/logo.svg"}
             />
-            <p className=" text-main  text-xl ">Fernando dipinrio</p>
+            <p className=" text-main  text-xl ">JHON DOE </p>
           </div>
         </div>
       </div>
-
     </div>
   );
 };
